@@ -3,7 +3,7 @@ const router=require('express').Router()
 //routes
 
 router.get("/", (req, res)=>{
-    res.send("welcome")
+    res.render("index.ejs");
 })
 
 
