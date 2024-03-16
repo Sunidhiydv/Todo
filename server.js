@@ -1,9 +1,10 @@
 const express= require('express');
 const dotenv = require('dotenv');
+const path = require('path');
 const mongoose =  require('mongoose')
 const bodyparser = require("body-parser");
-const collection = require("./models/todo.js")
-const collection1 = require("./models/todo.js")
+const collection = require("./models/mongodb.js")
+const collection1 = require("./models/mongodb.js")
 
 
 const app=express()
@@ -18,6 +19,8 @@ app.set("view engine", "ejs")
 
 // route
 app.use(require("./routes/index.js"))
+
+
 
 
 
